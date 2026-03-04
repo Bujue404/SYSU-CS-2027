@@ -53,3 +53,20 @@ dkms.conf
 
 # debug information files
 *.dwo
+# 1. 忽略所有没有后缀名的二进制文件 (Mac/Linux 通用)
+# 注意：这需要你养成给代码加 .c 后缀的好习惯
+*
+!*/
+!*.*
+
+# 2. 忽略常见的编译产物
+*.o
+*.out
+*.exe
+tempCodeRunnerFile*
+
+# 3. 忽略系统和编辑器缓存
+.DS_Store
+.vscode/
+.idea/
+bin/
